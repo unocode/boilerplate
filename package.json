@@ -1,0 +1,49 @@
+{
+  "name": "unocode-boilerplate",
+  "version": "0.0.1",
+  "description": "The Unocode's Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/webpack-dev-server --https --cert ./infrastructure/ssl/triggolabs.com.crt --key ./infrastructure/ssl/triggolabs.com.key --display-error-details --content-base ./ --devtool=inline-source-map --debug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "unocode": "git+ssh://git@bitbucket.org/triggolabs/unocode.git",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-module-resolver": "^2.4.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "cross-env": "^4.0.0",
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "fs-extra": "^2.1.2",
+    "google-closure-compiler-js": "^20171203.0.0",
+    "html-loader": "^0.4.5",
+    "json-loader": "^0.5.7",
+    "node-sass": "^4.5.3",
+    "path": "^0.12.7",
+    "request": "^2.81.0",
+    "rimraf": "^2.6.1",
+    "sass-loader": "^6.0.5",
+    "source-map-support": "^0.4.14",
+    "style-loader": "^0.17.0",
+    "webpack": "^2.7.0",
+    "webpack-closure-compiler": "^2.1.1",
+    "webpack-dev-server": "^1.16.1"
+  },
+  "author": "Douglas Delabrida",
+  "license": "ISC",
+  "keywords": [
+    "unocode",
+    "boilerplate"
+  ]
+}
