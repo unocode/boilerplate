@@ -1,9 +1,9 @@
 import { Core } from 'unocode';
 
-import Main from './actions/main/main.action';
+import UnocodeGreetings from './actions/unocode-greetings/unocode-greetings.action';
 
 const nextActions = [
-  Main
+  UnocodeGreetings
 ];
 
 Core.start([{
