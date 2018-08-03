@@ -10,5 +10,3 @@ Core.start([{
   enabled: () => true,
   nextActions
 }]);
-
-// UnoCode.runActions(nextActions);
