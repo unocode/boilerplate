@@ -4,8 +4,9 @@
   "description": "The Unocode's Boilerplate",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server --https --cert ./infrastructure/ssl/triggolabs.com.crt --key ./infrastructure/ssl/triggolabs.com.key --display-error-details --content-base ./ --devtool=inline-source-map --debug",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node_modules/.bin/webpack-dev-server --display-error-details --content-base ./ --devtool=inline-source-map --debug",
+    "build": "npm run clean && webpack --config webpack.config.js",
+    "clean": "rimraf dist"
   },
   "dependencies": {
     "unocode": "git+ssh://git@bitbucket.org/triggolabs/unocode.git",
