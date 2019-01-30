@@ -10,3 +10,5 @@ Core.start([{
   enabled: () => true,
   nextActions
 }]);
+
+console.log('Devia ter disparado.');
