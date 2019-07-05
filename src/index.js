@@ -11,4 +11,4 @@ Core.start([{
   nextActions
 }]);
 
-console.log('Devia ter disparado.');
+console.log('UnoCode Loaded!');
