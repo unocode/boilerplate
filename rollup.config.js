@@ -5,11 +5,19 @@ import babel from 'rollup-plugin-babel';
 import sass from 'rollup-plugin-sass';
 import html from 'rollup-plugin-html';
 import { terser } from 'rollup-plugin-terser';
+import filesize from 'rollup-plugin-filesize';
 
 const production = !process.env.ROLLUP_WATCH;
 
+function onwarn(warning) {
+  if (warning.code !== 'CIRCULAR_DEPENDENCY') {
+      console.error(`(!) ${warning.message}`);
+  }
+}
+
 export default {
   input: 'src/index.js',
+  onwarn,
   output: [
     {
       sourcemap: false,
@@ -40,6 +48,7 @@ export default {
       babelrc: false,
       presets: [['@babel/env', { useBuiltIns: 'usage', modules: false }]],
     }),
-    production && terser()
+    production && terser(),
+    production && filesize(),
   ]
 };
