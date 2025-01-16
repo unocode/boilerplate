@@ -16,7 +16,7 @@
     "build": "rollup -c"
   },
   "dependencies": {
-    "unocode": "git+ssh://git@bitbucket.org/triggolabs/unocode.git"
+    "unocode": "git+https://github.com/TriggoLabs/unocode.git"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",
